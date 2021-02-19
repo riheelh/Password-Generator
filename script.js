@@ -6,7 +6,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   //prompt for size of the password
   let n = prompt('Type number of charcters for your password (min=8 max=128)')
-  //validate the number of charcters are min 8 chars and max 128 chars
+  //validate the number of charcters are min 8 and max 128 chars
   if (!(n >= 8 && n <= 128 ) || n === null) {
     return alert('Does not meet password criteria (min=8 max=128), start again');
   }
@@ -33,27 +33,38 @@ function writePassword() {
   function randLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26 + 97)); 
   }
-  console.log(randLower());
-
+  
   function randUpper() {
     return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
   }
-  console.log(randUpper());
 
   function randNumber() {
     return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
   }
-  console.log(randNumber());
 
   function randSpecial() {
     var special = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
     return special[Math.floor(Math.random() * special.length)];
   }
-  console.log(randSpecial());
 
   // validate selected criteria to generate random password and randomize the order 
+  function generatePassword() {
+    // declare empty var for password
+    Pass = "";
 
+    // valdiate true of false of chars type
+      if(lowerCaseConf === true) { 
+        return Pass += randLower()
+      }
+    
+    // append chars to initial pass in array 
 
+    
+    //loop throug the chars type functions with number of chars
+
+  }
+  
+  console.log(generatePassword())
   
   // var password = generatePassword();
   // var passwordText = document.querySelector("#password");
