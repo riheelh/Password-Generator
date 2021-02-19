@@ -14,5 +14,4 @@ Password application helps to generate strong password with (min 8 - max 128 ) c
   * Enter the number character within the range of 8-128 chars.
   * Select the characters types on prompts.
   
-![password gen code](./assets/screenshot.jpg)
-
+![password-gen-code](./assets/screen.PNG)
