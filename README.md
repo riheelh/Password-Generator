@@ -2,7 +2,7 @@
 
 ## Description
 
-Password application helps to generate strong password with (min 8 - max 128 ) charcters with choosing password criteria consist of:
+Password application helps to generate strong password with range of 8 - 128 charcters selecting at least One password criteria of the following charcters type:
   * lower case letters.
   * higher case letters.
   * numbers.
