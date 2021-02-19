@@ -1,6 +1,6 @@
 # Password-Generator
 
-## Your Task
+## Description
 
 Password application helps to generate strong password with (min 8 - max 128 ) charcters with choosing password criteria consist of:
   * lower case letters.
@@ -14,5 +14,5 @@ Password application helps to generate strong password with (min 8 - max 128 ) c
   * Enter the number character within the range of 8-128 chars.
   * Select the characters types on prompts.
   
-![password gen code](./assets/screenshotpg.jpg)
+![password gen code](./assets/screenshot.jpg)
 
