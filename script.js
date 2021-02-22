@@ -42,25 +42,25 @@ function writePassword() {
       return special[Math.floor(Math.random() * special.length)];
     }
 
-    function generatePassword() {
-      // declare empty var for password
-      var Pass = ""
-      var finalPass = ""
-      // this is the loop building the pass char by char, this password length would be 16 chars
-      for (var i=0; i<n; i++) {
-        
-        // Randomize the picking of types
-        randomFunc = Math.floor(Math.random() * 4) 
-        
-        if (randomFunc === 0 && lowerCaseConf === true) {finalPass =randLower()}
-        if (randomFunc === 1 && upperCaseConf === true) {finalPass =randUpper()}
-        if (randomFunc === 2 && numConf === true) {finalPass =randNumber()} 
-        if (randomFunc === 3 && spclConf === true) {finalPass =randSpecial()}
+      function generatePassword() {
+        // declare empty var for password
+        var Pass = ""
+        var initPass = ""
+        // this is the loop building the pass char by char.
+        for (var i=0; i<n; i++) {
+          
+          // Randomize picking of types
+          randomFunc = Math.floor(Math.random() * 4) 
+          
+          if (randomFunc === 0 && lowerCaseConf === true) {initPass =randLower()}
+          if (randomFunc === 1 && upperCaseConf === true) {initPass =randUpper()}
+          if (randomFunc === 2 && numConf === true) {initPass =randNumber()} 
+          if (randomFunc === 3 && spclConf === true) {initPass =randSpecial()}
 
-        Pass += finalPass
-      } 
-       return Pass
-    }
+          Pass += initPass
+        } 
+        return Pass
+      }
       //loop throug the chars type functions with number of chars
       var password = generatePassword();
       var passwordText = document.querySelector("#password");
